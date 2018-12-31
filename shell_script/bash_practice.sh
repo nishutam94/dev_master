@@ -39,3 +39,19 @@ do
  echo $i
 done
 echo ${arrays[2]}
+
+echo "enter the number"
+read nu
+echo "$nu"
+q=`expr $nu % 2`
+
+if [ $q -eq 0 ];
+then 
+	echo "This is even"
+else
+	echo "this is odd"
+fi
+
+
+
+
