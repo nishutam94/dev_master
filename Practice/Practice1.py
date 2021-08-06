@@ -9,6 +9,8 @@ class student:
         self.name = name
         self.age = age
 
+
+
     def print_details(self):
         print("name : ",self.name)
         print("age : ",self.age)
