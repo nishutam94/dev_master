@@ -1,6 +1,6 @@
 # dev_master
 ### This repo contains three kind of files.
-1. **python practice work**
+1. **python practice work - with code** 
 2. **tensorflow machine learning code** [Tensorflow](https://www.tensorflow.org/learn)
 3. **shell scripting code**
 
