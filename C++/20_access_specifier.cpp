@@ -3,11 +3,16 @@ using namespace std;
 
 class base
 {   
-    private://Scope is within the class only, Only member function or friend function can access the variable.
+    private:
+        //Scope is within the class only, Only member function or 
+        //friend function can access the variable.
         int private_var = 10;
         static int private_static_var;
 
-    protected: // very similer to private class,Only member function or friend function or derived class members can access the variable.
+    protected: 
+        // very similer to private class,Only member function 
+        // or friend function or derived class members can 
+        // access the variable.
         int id_protected; 
 
     public: //scope is public, open to all
