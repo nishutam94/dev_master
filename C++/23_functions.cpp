@@ -2,6 +2,7 @@
 using namespace std;
 
 typedef void (*callbackfunction)();
+//function which takes the argument as another function. 
 class base
 {
     public:
@@ -45,7 +46,8 @@ class base
         return a-b;
     }
 
-    int (base :: *functionptr[3])(int,int) = {add,mul,sub}; // arrey of function pointer
+    int (base :: *functionptr[3])(int,int) = {add,mul,sub}; 
+    // arrey of function pointer to functions.
 
     void static mycallback()
     {

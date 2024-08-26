@@ -4,8 +4,8 @@
 using namespace std;
 
 
-// with the help of friend class and friend function we can accessprivate and protected the member of 
-// other class. 
+// with the help of friend class and friend function we can 
+// accessprivate and protected the member of other class. 
 
 
 class Geeks 

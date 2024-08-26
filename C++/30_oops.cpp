@@ -24,7 +24,9 @@ class base
             cout<<"Defining the base function inside the base class\n";
         }
 
-}object(30); // creating object like structure this is also valid now. also supplying the parameter
+}object(30); 
+// creating object like structure this is also valid now. 
+// Also supplying the parameter
 
 void base :: base_member_fucntion()
 {
@@ -45,7 +47,8 @@ class drived : public base
 int main()
 {
 // ways to declear object    
-base base1; // this called the deafult constructor;
+base base1; 
+// this called the deafult constructor;
 base *base2 = new base;
 //calling the functions through objects 
 base1.base_function();

@@ -7,7 +7,17 @@ using namespace std;
  you can call a virtual function for that object and execute the derived class’s version of the method.
 */
 
-// If we remove the virtual key word from the below class and use the drive class object it will always go for base class function(even we are using drive calls object).
+// If we remove the virtual key word from the below class 
+//and use the drive class object it will always go for base 
+//class function(even we are using drive calls object).
+
+//pure virtual function 
+class base2
+{
+    virtual void function()=0; // this is pure virtual function
+};
+
+
 class base
 {
 public:
@@ -42,7 +52,8 @@ base1->virtual_function();
 
 base *base2 = new drived;
 base2->base_function1();
-base2->virtual_function(); // this will print the drived class object. (overridding a function.)
+base2->virtual_function(); 
+// this will print the drived class object. (overridding a function.)
 // this will work as expected. 
 base base3;
 base3.base_function1();

@@ -1,5 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
+
+// We use this to access the base class variable or member functions.
 class base
 {
     private:
