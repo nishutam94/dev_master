@@ -1,0 +1,1 @@
+cmd_/root/dev_master/linux/Hello_world/Module.symvers :=  scripts/mod/modpost       -o /root/dev_master/linux/Hello_world/Module.symvers -T /root/dev_master/linux/Hello_world/modules.order -i Module.symvers -e 

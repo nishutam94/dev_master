@@ -1,0 +1,1 @@
+cmd_/root/dev_master/linux/Hello_world/hello_world.mod := printf '%s\n'   hello_world.o | awk '!x[$$0]++ { print("/root/dev_master/linux/Hello_world/"$$0) }' > /root/dev_master/linux/Hello_world/hello_world.mod
