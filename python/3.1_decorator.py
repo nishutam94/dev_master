@@ -8,31 +8,32 @@ This is helpful to "decorate" or "wrap" another function.
 
 
 def decorator(function):
-    def wrapper(*args,**kargs):
+    def wrapper():
         time1 = time.time()
-        result=function(*args,**kargs)
+        result=function()
         time2 = time.time()
         result = time2-time1
         print(function.__name__,"Execution time is",time2-time1)
-        return result 
+        
     return wrapper
 
 
 @decorator
-def timing(n):
+def timing():
     count = 1
-    for i in range(n):
+    for i in range(10):
         count = count+count
     return count
 
 
 @decorator
-def timing2(n):
+def timing2():
     count = 1
+    n=10
     while n :
         count = count+count
         n = n - 1
     return count
 
-timing(10)
-timing2(10)
+timing()
+timing2()
