@@ -14,7 +14,7 @@ class base
         {
             cout<<"This is destructor.\t \n";
         }
-        base(int x) // this is default constructor 
+        base(int x) // This is Parameterized constructor 
         {
             cout<<"This is Parameterized constructor.\t"<<x<<"\n";
         }
@@ -33,7 +33,7 @@ void base :: base_member_fucntion()
     cout<<"Defining the Member function outside the base class\n";
 }
 
-class drived : public base
+class drived : public base // inharitance
 {
     public:
     void drived_function()
@@ -58,7 +58,7 @@ base2->base_member_fucntion();
 
 drived drive1 ;
 drived *drive2 = new drived;
-// Acceing the base class function using drived class object.
+// Acceing the base class function using drived class object.inheritence. (function overriffing.)
 drive1.base_member_fucntion(); 
 return 0;
 }

@@ -1,0 +1,9 @@
+Question: What is a race condition? How can it be avoided in C++?
+Answer: A race condition occurs when two or more threads access shared data concurrently, and at least one of them modifies it. 
+        This leads to inconsistent or erroneous results.
+
+To avoid race conditions in C++:
+================================
+
+1.  Use mutexes or locks (e.g., std::mutex, std::lock_guard) to ensure that only one thread accesses the shared resource at a time.
+2.  Atomic operations (e.g., std::atomic) can be used for certain types of data to prevent race conditions.
