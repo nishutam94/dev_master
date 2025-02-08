@@ -21,7 +21,6 @@ void producer(int id)
    {
     unique_lock<mutex> lock(mtx);
     full.wait(lock,[]() { return count < n;});
-    //while(count<N);
     buffer[in] = id;
     in = (in+1)%n;
     cout<<"produced "<<id<<"\n";
