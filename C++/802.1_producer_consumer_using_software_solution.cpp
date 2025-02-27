@@ -27,8 +27,7 @@ void producer(int id)
 
 void consumer(int id)
 {
-    while(true)
-    {
+  
     while(true)
     {
     while(count == 0);
@@ -38,7 +37,7 @@ void consumer(int id)
     turn = 1;
     }
 
-    }
+    
     
 }
 

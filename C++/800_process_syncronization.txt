@@ -1,6 +1,6 @@
 Question: What is a race condition? How can it be avoided in C++?
-Answer: A race condition occurs when two or more threads access shared data concurrently, and at least one of them modifies it. 
-        This leads to inconsistent or erroneous results.
+Answer: A race condition occurs when two or more threads access shared data concurrently, 
+        and at least one of them modifies it. This leads to inconsistent or erroneous results.
 
 To avoid race conditions in C++:
 ================================
