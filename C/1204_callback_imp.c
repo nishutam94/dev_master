@@ -20,7 +20,7 @@ return value;
 int main()
 {
     int (*fun1)() = &function1;
-
+=
     function2(fun1);
 
     return 0;
