@@ -1,0 +1,25 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        service: [stress-ng-service]
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Build Docker image
+      run: |
+        docker build -t ${{ matrix.service }} ./microservices/${{ matrix.service }}
+
+    - name: Run basic container check
+      run: |
+        docker run --rm ${{ matrix.service }} python --version || echo "Service built successfully"

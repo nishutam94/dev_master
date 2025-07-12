@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  stress-ng:
+    build: ./microservices/stress-ng-service
+    ports:
+      - "5001:5000"
+
+
+
+
