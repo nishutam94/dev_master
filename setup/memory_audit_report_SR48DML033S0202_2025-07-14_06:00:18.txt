@@ -1,0 +1,313 @@
+==== System Memory & Architecture Audit Report ====
+Generated on: Mon Jul 14 06:00:18 AM EDT 2025
+Hostname: SR48DML033S0202
+OS: Linux 6.2.0-emr.bkc.6.2.19.2.52.x86_64
+
+1. 🔹 Total Physical Memory:
+MemTotal:       131078064 kB
+
+2. 🔹 Application Memory Config (Java example):
+jenkins   142825       1  0 Jul12 ?        00:02:48 /usr/bin/java -Djava.awt.headless=true -jar /usr/share/java/jenkins.war --webroot=/var/cache/jenkins/war --httpPort=8080
+
+3. 🔹 Memory Allocators in Use (by PID):
+
+4. 🔹 Memory Type and Speed:
+	Size: 16 GB
+	Type: DDR5
+	Speed: 5600 MT/s
+	Configured Memory Speed: 5600 MT/s
+	Non-Volatile Size: None
+	Volatile Size: 16 GB
+	Cache Size: None
+	Logical Size: None
+	Size: No Module Installed
+	Type: Unknown
+	Size: 16 GB
+	Type: DDR5
+	Speed: 5600 MT/s
+	Configured Memory Speed: 5600 MT/s
+	Non-Volatile Size: None
+	Volatile Size: 16 GB
+	Cache Size: None
+	Logical Size: None
+	Size: No Module Installed
+	Type: Unknown
+	Size: 16 GB
+	Type: DDR5
+	Speed: 5600 MT/s
+	Configured Memory Speed: 5600 MT/s
+	Non-Volatile Size: None
+	Volatile Size: 16 GB
+	Cache Size: None
+	Logical Size: None
+	Size: No Module Installed
+	Type: Unknown
+	Size: 16 GB
+	Type: DDR5
+	Speed: 5600 MT/s
+	Configured Memory Speed: 5600 MT/s
+	Non-Volatile Size: None
+	Volatile Size: 16 GB
+	Cache Size: None
+	Logical Size: None
+	Size: No Module Installed
+	Type: Unknown
+	Size: 16 GB
+	Type: DDR5
+	Speed: 5600 MT/s
+	Configured Memory Speed: 5600 MT/s
+	Non-Volatile Size: None
+	Volatile Size: 16 GB
+	Cache Size: None
+	Logical Size: None
+	Size: No Module Installed
+	Type: Unknown
+	Size: 16 GB
+	Type: DDR5
+	Speed: 5600 MT/s
+	Configured Memory Speed: 5600 MT/s
+	Non-Volatile Size: None
+	Volatile Size: 16 GB
+	Cache Size: None
+	Logical Size: None
+	Size: No Module Installed
+	Type: Unknown
+	Size: 16 GB
+	Type: DDR5
+	Speed: 5600 MT/s
+	Configured Memory Speed: 5600 MT/s
+	Non-Volatile Size: None
+	Volatile Size: 16 GB
+	Cache Size: None
+	Logical Size: None
+	Size: No Module Installed
+	Type: Unknown
+	Size: 16 GB
+	Type: DDR5
+	Speed: 5600 MT/s
+	Configured Memory Speed: 5600 MT/s
+	Non-Volatile Size: None
+	Volatile Size: 16 GB
+	Cache Size: None
+	Logical Size: None
+	Size: No Module Installed
+	Type: Unknown
+	Size: No Module Installed
+	Type: Unknown
+	Size: No Module Installed
+	Type: Unknown
+	Size: No Module Installed
+	Type: Unknown
+	Size: No Module Installed
+	Type: Unknown
+	Size: No Module Installed
+	Type: Unknown
+	Size: No Module Installed
+	Type: Unknown
+	Size: No Module Installed
+	Type: Unknown
+	Size: No Module Installed
+	Type: Unknown
+	Size: No Module Installed
+	Type: Unknown
+	Size: No Module Installed
+	Type: Unknown
+	Size: No Module Installed
+	Type: Unknown
+	Size: No Module Installed
+	Type: Unknown
+	Size: No Module Installed
+	Type: Unknown
+	Size: No Module Installed
+	Type: Unknown
+	Size: No Module Installed
+	Type: Unknown
+	Size: No Module Installed
+	Type: Unknown
+
+5. 🔹 Memory Testing Tool:
+/usr/bin/which: no memtester in (/root/tmc:/root/.vscode-server/cli/servers/Stable-cb0c47c0cfaad0757385834bd89d410c78a856c0/server/bin/remote-cli:/root/tmc:/root/tmc:/root/.local/bin:/root/bin:/usr/share/Modules/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin)
+memtester is NOT installed.
+
+6. 🔹 System Architecture (NUMA/UMA):
+NUMA node(s):                    1
+NUMA node0 CPU(s):               0-127
+available: 1 nodes (0)
+node 0 cpus: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127
+node 0 size: 128005 MB
+node 0 free: 114624 MB
+node distances:
+node   0 
+  0:  10 
+
+7. 🔹 NUMA-Awareness and Tunables:
+policy: default
+preferred node: current
+physcpubind: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 
+cpubind: 0 
+nodebind: 0 
+membind: 0 
+preferred: 
+zone_reclaim_mode: 0
+
+8. 🔹 Memory Socket Topology:
+lstopo not installed.
+
+9. 🔹 Memory Buses (inferred from DMIDECODE):
+	Locator: CPU0_DIMM_A1
+	Bank Locator: NODE 0
+	Speed: 5600 MT/s
+	Configured Memory Speed: 5600 MT/s
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Locator: CPU0_DIMM_A2
+	Bank Locator: NODE 0
+	Locator: CPU0_DIMM_B1
+	Bank Locator: NODE 0
+	Speed: 5600 MT/s
+	Configured Memory Speed: 5600 MT/s
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Locator: CPU0_DIMM_B2
+	Bank Locator: NODE 0
+	Locator: CPU0_DIMM_C1
+	Bank Locator: NODE 1
+	Speed: 5600 MT/s
+	Configured Memory Speed: 5600 MT/s
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Locator: CPU0_DIMM_C2
+	Bank Locator: NODE 1
+	Locator: CPU0_DIMM_D1
+	Bank Locator: NODE 1
+	Speed: 5600 MT/s
+	Configured Memory Speed: 5600 MT/s
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Locator: CPU0_DIMM_D2
+	Bank Locator: NODE 1
+	Locator: CPU0_DIMM_E1
+	Bank Locator: NODE 2
+	Speed: 5600 MT/s
+	Configured Memory Speed: 5600 MT/s
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Locator: CPU0_DIMM_E2
+	Bank Locator: NODE 2
+	Locator: CPU0_DIMM_F1
+	Bank Locator: NODE 2
+	Speed: 5600 MT/s
+	Configured Memory Speed: 5600 MT/s
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Locator: CPU0_DIMM_F2
+	Bank Locator: NODE 2
+	Locator: CPU0_DIMM_G1
+	Bank Locator: NODE 3
+	Speed: 5600 MT/s
+	Configured Memory Speed: 5600 MT/s
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Locator: CPU0_DIMM_G2
+	Bank Locator: NODE 3
+	Locator: CPU0_DIMM_H1
+	Bank Locator: NODE 3
+	Speed: 5600 MT/s
+	Configured Memory Speed: 5600 MT/s
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Locator: CPU0_DIMM_H2
+	Bank Locator: NODE 3
+	Locator: CPU1_DIMM_A1
+	Bank Locator: NODE 4
+	Locator: CPU1_DIMM_A2
+	Bank Locator: NODE 4
+	Locator: CPU1_DIMM_B1
+	Bank Locator: NODE 4
+	Locator: CPU1_DIMM_B2
+	Bank Locator: NODE 4
+	Locator: CPU1_DIMM_C1
+	Bank Locator: NODE 5
+	Locator: CPU1_DIMM_C2
+	Bank Locator: NODE 5
+	Locator: CPU1_DIMM_D1
+	Bank Locator: NODE 5
+	Locator: CPU1_DIMM_D2
+	Bank Locator: NODE 5
+	Locator: CPU1_DIMM_E1
+	Bank Locator: NODE 6
+	Locator: CPU1_DIMM_E2
+	Bank Locator: NODE 6
+	Locator: CPU1_DIMM_F1
+	Bank Locator: NODE 6
+	Locator: CPU1_DIMM_F2
+	Bank Locator: NODE 6
+	Locator: CPU1_DIMM_G1
+	Bank Locator: NODE 7
+	Locator: CPU1_DIMM_G2
+	Bank Locator: NODE 7
+	Locator: CPU1_DIMM_H1
+	Bank Locator: NODE 7
+	Locator: CPU1_DIMM_H2
+	Bank Locator: NODE 7
+
+10. 🔹 CPU Cache Sizes:
+L1d cache:                       3 MiB (64 instances)
+L1i cache:                       2 MiB (64 instances)
+L2 cache:                        128 MiB (64 instances)
+L3 cache:                        320 MiB (1 instance)
+
+11. 🔹 BIOS Settings:
+# dmidecode 3.6
+Getting SMBIOS data from sysfs.
+SMBIOS 3.2.0 present.
+
+Handle 0x0001, DMI type 0, 26 bytes
+BIOS Information
+	Vendor: Intel Corporation
+	Version: EGSDCRB1.86B.1752.P05.2401050243
+	Release Date: 01/05/2024
+	Address: 0xF0000
+	Runtime Size: 64 kB
+	ROM Size: 16 MB
+	Characteristics:
+		PCI is supported
+		PNP is supported
+		BIOS is upgradeable
+		BIOS shadowing is allowed
+		Boot from CD is supported
+		Selectable boot is supported
+		EDD is supported
+		5.25"/1.2 MB floppy services are supported (int 13h)
+		3.5"/720 kB floppy services are supported (int 13h)
+		3.5"/2.88 MB floppy services are supported (int 13h)
+		Print screen service is supported (int 5h)
+		8042 keyboard services are supported (int 9h)
+		Serial services are supported (int 14h)
+		Printer services are supported (int 17h)
+		CGA/mono video services are supported (int 10h)
+		ACPI is supported
+		USB legacy is supported
+		LS-120 boot is supported
+		ATAPI Zip drive boot is supported
+		Function key-initiated network boot is supported
+		Targeted content distribution is supported
+		UEFI is supported
+		Manufacturing mode is supported
+
+Handle 0x0007, DMI type 13, 22 bytes
+BIOS Language Information
+	Language Description Format: Abbreviated
+	Installable Languages: 1
+		enUS
+	Currently Installed Language: enUS
+
+
+12. 🔹 Huge Pages Configuration:
+AnonHugePages:   2899968 kB
+ShmemHugePages:        0 kB
+FileHugePages:         0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+Hugetlb:               0 kB
+[always] madvise never
+
+13. 🔹 Memory Overcommit Settings:
+overcommit_memory = 1
+overcommit_ratio = 50
+

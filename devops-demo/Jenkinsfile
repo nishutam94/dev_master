@@ -1,0 +1,56 @@
+pipeline {
+    agent any
+
+    environment {
+        IMAGE_NAME = 'stress-ng-service'
+        DOCKERFILE_PATH = 'microservices/stress-ng-service/Dockerfile'
+        DEPLOYMENT_FILE = 'k8s-manifests/stress-ng-deploy.yaml'
+    }
+
+    stages {
+        stage('Clone Repo') {
+            steps {
+                checkout scm
+            }
+        }
+
+        stage('Set Docker Env (Minikube)') {
+            steps {
+                sh 'eval $(minikube docker-env)'
+            }
+        }
+
+        stage('Build Docker Image') {
+            steps {
+                sh 'docker build -t $IMAGE_NAME ./microservices/stress-ng-service'
+            }
+        }
+
+        stage('Apply K8s Deployment') {
+            steps {
+                sh 'kubectl apply -f $DEPLOYMENT_FILE'
+            }
+        }
+
+        stage('Rollout Restart') {
+            steps {
+                sh 'kubectl rollout restart deployment stress-ng-deployment'
+            }
+        }
+
+        stage('Verify Pods') {
+            steps {
+                sh 'kubectl get pods'
+            }
+        }
+    }
+
+    post {
+        success {
+            echo '✅ Deployment successful!'
+        }
+        failure {
+            echo '❌ Deployment failed!'
+        }
+    }
+}
